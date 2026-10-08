@@ -1,4 +1,4 @@
-# Technical Debt
+﻿# Technical Debt
 
 Tracks known technical work that is intentionally postponed.
 
@@ -21,7 +21,7 @@ Low
 
 Reason:
 
-The octagon currently communicates the intended geometric presence, but its diagonal edges lose contrast at normal viewing distances.
+The octagon communicates the intended geometric presence, but its diagonal edges lose contrast at normal viewing distances.
 
 It is functional.
 
@@ -42,16 +42,16 @@ Medium
 
 Reason:
 
-HTML/CSS minification, SVG optimization and asset compression will be introduced when the build pipeline is implemented.
+HTML/CSS minification, SVG optimization and asset compression will be introduced only when a justified build or optimization pipeline exists.
 
-Current development prioritizes architecture over optimization.
+Current development prioritizes architectural stability over premature optimization.
 
 ---
 
 ## TD-003
 
 Title:
-Automated link validation
+CI-based validation
 
 Status:
 Deferred
@@ -61,9 +61,9 @@ Medium
 
 Reason:
 
-Broken-link detection will be handled through future CI automation.
+Local automated validation is now implemented through `scripts/validate.ps1` and its individual checks.
 
-Manual validation is sufficient during the current phase.
+CI-based execution remains intentionally deferred because the project currently has no build or deployment pipeline requiring GitHub Actions.
 
 ---
 
@@ -104,19 +104,19 @@ Undocumented debt does not exist.
 Title:
 Standardize Exhibit Directory
 
-Current exhibit folders mix thematic categories and numbered exhibits.
+Status:
+Completed
 
-Future work:
+Reason:
 
-All published exhibits should follow:
+Published exhibits now follow the numbered directory convention:
 
 exhibits/
     001-...
     002-...
     003-...
-
-Status:
-Completed
+    004-...
+    005-...
 
 ---
 
@@ -133,8 +133,6 @@ Low
 
 Reason:
 
-The repository currently uses `component/` while the intended convention is `components/`.
+The component directory convention was standardized to `components/`.
 
-The current name does not affect functionality.
-
-The rename will be performed during a future repository cleanup to preserve Git history.
+The current repository contains the canonical `components/` directory.

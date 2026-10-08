@@ -1,4 +1,4 @@
-# Proyecto Toroide — Documentation System
+﻿# Proyecto Toroide — Documentation System
 
 ## Purpose
 
@@ -11,13 +11,16 @@ support, and expose the Toroide project.
 
 Published or documentation-facing material.
 
-Examples:
+This includes:
 
-- Evidence registry
-- Exhibit documentation
-- Site documentation
+- Core project documentation
+- Evidence and exhibit registries
 - Audits
-- Release notes
+- Milestones
+- Public technical documentation
+- Release-facing documentation when justified
+
+The document index is maintained in `docs/INDEX.md`.
 
 ### `exhibits/`
 
@@ -36,12 +39,14 @@ This includes:
 - roadmap
 - structure
 - engineering principles
+- audit records
+- project governance
 
 ### `scripts/`
 
 Operational validation tooling.
 
-These scripts are intentionally lightweight and dependency-free.
+The validation suite is intentionally lightweight and dependency-free.
 
 ## Release flow
 

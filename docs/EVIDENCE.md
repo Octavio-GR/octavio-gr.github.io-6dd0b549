@@ -1,4 +1,4 @@
-# EVIDENCE
+﻿# EVIDENCE
 
 Toroide distinguishes between different kinds of evidence.
 
@@ -38,6 +38,7 @@ Examples:
 - Documentation
 - ADR
 - Audit
+- Exhibit
 
 ---
 
@@ -48,9 +49,9 @@ Something reproducible.
 Examples:
 
 - Performance metrics
-- Accessibility score
+- Accessibility measurements
 - Bundle size
-- Build time
+- Validation results
 
 ---
 
@@ -62,8 +63,9 @@ Observable
 
 - Static HTML
 - Modular CSS
-- Zero client-side runtime
+- No required client-side runtime for the core site
 - Documentation-first development
+- Reproducible local validation suite
 
 ---
 
@@ -78,6 +80,22 @@ Observable
 - Principles
 - ADRs
 - Audit history
+- Milestone records
+- Evidence registry
+
+---
+
+## Exhibits
+
+Verified
+
+- EX-001 — Toroide Construction
+- EX-002 — Zero JavaScript Runtime
+- EX-003 — Progressive Disclosure
+- EX-004 — Context Stack
+- EX-005 — Accessibility
+
+The individual exhibits contain the implementation and detailed evidence for their respective claims.
 
 ---
 
@@ -93,27 +111,17 @@ Claims:
 
 Current status:
 
-Requires implementation through real artifacts.
+Supported through documented principles and observable project artifacts.
 
 ---
 
 ## Perception
 
-Prototype
+Functional
 
-Goal:
+The project exposes its architecture, evidence, and documentation through public static pages.
 
-The first seconds should communicate:
-
-- Orientation
-- Calm
-- Competence
-
-Current status:
-
-Validated conceptually.
-
-Requires observable implementation.
+Further refinement remains possible as professional presentation work continues.
 
 ---
 
@@ -121,11 +129,9 @@ Requires observable implementation.
 
 Planned
 
-- Progressive Disclosure
-- Context Stack
-- Engineering Exhibits
-- Interactive Evidence
-- Project Demonstrations
+- Interactive evidence
+- Project demonstrations
+- Additional empirical measurements when justified by real implementation
 
 ---
 

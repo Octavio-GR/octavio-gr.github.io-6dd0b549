@@ -1,4 +1,4 @@
-# Toroide Audits
+﻿# Toroide Audits
 
 ## Audit History
 
@@ -95,13 +95,55 @@ Rigorous code-level audit and documentation hardening for exhibits EX-001 throug
 
 Verified Findings
 
-- **EX-002 (Zero JS Runtime)**: Confirmed absolute absence of script tags, inline event handlers (`onclick`, `onload`), or JavaScript pseudo-protocols via explicit pattern searches. Navigation relies entirely on standard HTML anchors.
-- **EX-005 (Accessibility & Contrast)**: Calculated precise WCAG contrast ratio of **18.07:1** for primary tokens (`--text: #F5F5F7` on `--bg: #0B0B0C`). Verified via pattern search that global CSS contains no rules stripping native focus outlines (`outline: none` or `0`).
-- **EX-003 & EX-004 (Progressive Disclosure & Context Stack)**: Validated file-based architectural layering separating surface-level summaries from deep Markdown documentation logs without client-side hydration overhead.
+- EX-002 (Zero JS Runtime): Confirmed absence of script tags, inline event handlers, and JavaScript pseudo-protocols in the exhibit.
+- EX-005 (Accessibility & Contrast): Verified the primary color contrast ratio and preservation of native focus behavior.
+- EX-003 & EX-004: Validated file-based architectural layering separating surface-level summaries from deeper documentation without client-side hydration.
 
 Decision
 
 Documentation aligned strictly with empirical code evidence. All exhibits certified under zero-runtime and native-behavior constraints.
+
+---
+
+### Audit #005 — Documentation & Operational Maturity
+
+Date:
+2026-10-08
+
+Status:
+Completed
+
+Summary
+
+Repository-wide documentation and operational consistency review following Milestone 003.
+
+Verified Findings
+
+- EX-001 through EX-005 remain registered as Verified.
+- Evidence documentation was synchronized with implemented exhibits.
+- Milestone documentation was synchronized with completed work.
+- Production 404 handling is present.
+- Local validation tooling is implemented under `scripts/`.
+- Release flow is explicitly documented.
+- `components/` is the current component directory.
+- `docs/CORE_LOOP.md` remains the conceptual development loop and does not require replacement by the operational release flow.
+
+Corrective Actions
+
+- Updated roadmap status.
+- Updated evidence registry state.
+- Added Milestone 003 completion record.
+- Updated technical debt records.
+- Updated operational guidance for repository automation.
+- Preserved existing architectural boundaries.
+
+Decision
+
+No architectural redesign required.
+
+The repository is sufficiently documented to proceed to professional presentation work.
+
+---
 
 # Current Audit Status
 
@@ -109,18 +151,27 @@ Implemented
 
 - Focus ring preservation
 - Semantic heading hierarchies
-- High-contrast color tokens (18.07:1 verified)
+- High-contrast color tokens
 - Modular CSS structure
 - Empirical README synchronization for EX-001 through EX-005
+- Local link validation
+- Asset validation
+- HTML structural validation
+- CSS validation
+- Encoding validation
+- Duplicate declaration reporting
+- Production 404 page
+- Documentation/release flow
 
 Pending
 
-- Link checker
+- CI-based validation
 - Asset optimization
 - HTML/CSS minification
+- Further professional presentation refinement
 
 Rejected
 
-- Runtime JavaScript
+- Runtime JavaScript as a site requirement
 - Premature build complexity
-- Unverified accessibility claims ("universal usability")
+- Unverified accessibility claims
